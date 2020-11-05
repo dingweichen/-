@@ -1,0 +1,64 @@
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    margin: 0px;
+}
+
+.resume-header {
+    /* 布局 */
+    float: left;
+    /* 盒模型 */
+    box-sizing: border-box;
+    width: 13%;
+    height: 100%;
+    padding-top: 60px;
+    /* 文本字体 */
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    /* 视觉效果 */
+    background: #68A9F9;
+    color: #fff;
+}
+
+.resume-body {
+    float: left;
+    margin-left: 20px;
+}
+
+.item {
+    padding: 0px;
+    margin: 0px;
+    font-size: 19px;
+    list-style: none;
+}
+
+.item .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 12px 0px !important;
+}
+
+.item>li div span {
+    margin-right: 32px;
+}
+
+.item>li div span strong {
+    margin-right: 10px;
+}
+
+.item>li:nth-child(n+3) div {
+    margin: 5px 0px;
+}
